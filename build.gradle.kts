@@ -1,0 +1,19 @@
+plugins {
+    java
+}
+
+group = "mk.ukim.finki.wp"
+version = "1.0"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.10.0")
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
